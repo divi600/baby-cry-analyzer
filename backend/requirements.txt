@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+tensorflow
+librosa
+numpy
+soundfile
+joblib
+python-multipart

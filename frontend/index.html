@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Infant Cry Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Infant Cry Detection System</h1>
+  </header>
+
+  <!-- MAIN CARD -->
+  <div class="card">
+    <h2>Upload Audio File</h2>
+
+    <input type="file" id="audioFile" accept="audio/*">
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="loading" class="hidden">
+      <p>Processing audio...</p>
+    </div>
+
+    <div id="result" class="hidden">
+      <h3 id="predictionText"></h3>
+      <p id="alertText" style="font-weight:bold; color:#d9534f; font-size:18px;"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built using TensorFlow | FastAPI | CRNN</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
