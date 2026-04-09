@@ -6,6 +6,8 @@ import tensorflow as tf
 import numpy as np
 
 from utils import extract_features, le
+from backend.utils import extract_features, le
+
 
 # ✅ CREATE APP FIRST
 app = FastAPI()
