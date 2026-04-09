@@ -5,8 +5,9 @@ import io
 import soundfile as sf
 
 # Load saved scaler & encoder
-scaler = joblib.load("scaler.pkl")
-le = joblib.load("label_encoder.pkl")
+scaler = joblib.load("backend/scaler.pkl")
+le = joblib.load("backend/label_encoder.pkl")
+
 
 def extract_features(audio_bytes):
     # Convert bytes → audio signal
