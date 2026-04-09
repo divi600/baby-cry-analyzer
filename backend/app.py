@@ -20,7 +20,12 @@ app.add_middleware(
 )
 
 # ✅ LOAD MODEL
-model = tf.keras.models.load_model("backend/model_fixed.keras", compile=False)
+model = tf.keras.models.load_model(
+    "backend/model_fixed.keras",
+    compile=False,
+    safe_mode=False
+)
+
 
 
 # ✅ API ENDPOINT
