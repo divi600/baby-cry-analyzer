@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import tensorflow as tf
 import numpy as np
 
-from utils import extract_features, le
 from backend.utils import extract_features, le
 
 
@@ -21,7 +20,7 @@ app.add_middleware(
 )
 
 # ✅ LOAD MODEL
-model = tf.keras.models.load_model("model.keras")
+model = tf.keras.models.load_model("backend/model.keras")
 
 # ✅ API ENDPOINT
 @app.post("/predict")
