@@ -20,7 +20,8 @@ app.add_middleware(
 )
 
 # ✅ LOAD MODEL
-model = tf.keras.models.load_model("backend/model.keras")
+model = tf.keras.models.load_model("backend/model.keras", compile=False)
+
 
 # ✅ API ENDPOINT
 @app.post("/predict")
